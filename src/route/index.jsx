@@ -6,6 +6,9 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import OtpVerification from "../pages/OtpVerification";
 import ForgotPassword from "../pages/ForgotPassword";
+import ResetPassword from "../pages/ResetPassword";
+import UserMenuMobile from "../pages/userMenuMobile";
+import Profile from "../pages/Profile";
 
 
 const router = createBrowserRouter([
@@ -36,6 +39,18 @@ const router = createBrowserRouter([
             {
                 path:"forgot-password",
                 element:<ForgotPassword/>
+            },
+            {
+                path:"reset-password",
+                element:<ResetPassword/>
+            },
+            {
+                path:"user",
+                element:<UserMenuMobile/>
+            },
+            {
+                path:"/dashboard/profile",
+                element:<Profile/>
             }
         ]
     }
